@@ -50,7 +50,7 @@ class _ModelsListScreenState extends State<ModelsListScreen> {
           var bloc = context.read<ManufacturerModelsBloc>();
 
           return ListView.builder(
-            key: Key(WidgetKeys.modelsListView),
+            key: const Key(WidgetKeys.modelsListView),
             itemCount: context.read<ManufacturerModelsBloc>().models.length,
             itemBuilder: (context, index) {
               var model = bloc.models[index];

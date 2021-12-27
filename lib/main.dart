@@ -16,6 +16,7 @@ import 'package:test_project/screens/manufacturers_list_screen.dart';
   SharedPreferences
 ])
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   var sharedPreferences = await SharedPreferences.getInstance();
   runApp(
     ListenableProvider(
